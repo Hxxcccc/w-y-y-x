@@ -20,7 +20,7 @@
     </div>
     <div @click="goto('/shopping')" :class="{on: $route.path==='/shopping'}">
       <p >
-        <i class="v icon-gouwuche"></i>
+        <i class="iconfont icon-gouwuche"></i>
       </p>
       <span>购物车</span>
     </div>

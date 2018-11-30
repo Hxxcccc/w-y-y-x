@@ -6,8 +6,9 @@
         <i class="iconfont icon-sousuo"></i>
         <span>搜索商品，共19724款好物</span>
       </div>
-      <div class="loginBtn">登录</div>
+      <div class="loginBtn" @click="$router.push('/personal')">登录</div>
     </div>
+    <div class="wrap"></div>
   </div>
 </template>
 
@@ -28,6 +29,7 @@
         width 70px
         height 20px
         background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/indexLogo-11d65342f9.png);
+        background-repeat no-repeat
         background-size 70px
         margin 12px 15px
       .search
@@ -53,4 +55,13 @@
         border-radius 3px
         color #b4282d
         margin 13px 15px
+    .navBar
+      width 750px
+      overflow hidden
+
+      .navList
+        li
+          float left
+          font-size 14px
+
 </style>

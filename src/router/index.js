@@ -1,5 +1,5 @@
 /*
-路由器模块
+路由器对象模块
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -16,19 +16,23 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/msite'
+      redirect: '/msite',
+      meta: { requiresAuth: true }
     },
     {
       path: '/msite',
-      component: Msite
+      component: Msite,
+      meta: { requiresAuth: true }
     },
     {
       path: '/recommend',
-      component: Recommend
+      component: Recommend,
+      meta: { requiresAuth: true }
     },
     {
       path: '/classify',
-      component: Classify
+      component: Classify,
+      meta: { requiresAuth: true }
     },
     {
       path: '/personal',
@@ -36,7 +40,8 @@ export default new VueRouter({
     },
     {
       path: '/shopping',
-      component: Shopping
+      component: Shopping,
+      meta: { requiresAuth: true }
     }
   ]
 })

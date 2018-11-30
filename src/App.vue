@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <FooterGuide></FooterGuide>
+    <router-view/>
+    <FooterGuide v-show="$route.meta.requiresAuth"/>
   </div>
 </template>
 
