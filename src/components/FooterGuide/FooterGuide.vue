@@ -47,13 +47,16 @@ export default {
   @import "../../common/stylus/mixins.styl";
 
   .footer
-    top-border-1px(#e4e4e4)
-    position absolute
+    border-top 1px solid #e4e4e4
+    position fixed
     width 100%
+    height  48px
     bottom 0
     display flex
     justify-content space-around
+    align-items center
     background #fff
+    z-index 10
     &>div
       margin-bottom 6px
       p
@@ -70,7 +73,7 @@ export default {
     &>.on
       p
         i
-          color #FF69B4
+          color #b4282d
       span
-        color #FF69B4
+        color #b4282d
 </style>

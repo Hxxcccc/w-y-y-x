@@ -157,10 +157,10 @@ export default {}
           font-size 14px
           margin-top 3px
     .footerGuide
-      width 375px
+      width 335px
       height 20px
       position absolute
-      left 0
+      left 20px
       bottom 40px
       display flex
       justify-content center

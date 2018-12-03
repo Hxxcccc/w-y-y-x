@@ -38,11 +38,4 @@ export default function ajax(url,data={},method='GET') {
         reject(error)
       })
   })
-  // async function test() {
-  //   const result = await ajax('/login',{name,'Tom',pwd:'123'},'POST')
-  //   if(result.code === 0){
-  //
-  //   }
-  // }
-
 }

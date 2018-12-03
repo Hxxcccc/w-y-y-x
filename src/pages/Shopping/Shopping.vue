@@ -29,6 +29,7 @@ export default {}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+  @import '../../common/stylus/mixins.styl'
   .body
     background #f4f4f4
     height 616px
