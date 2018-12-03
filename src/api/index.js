@@ -17,3 +17,6 @@ export const reqTopicList = () => ajax('/topicList')
 //好物
 export const reqCateList = () => ajax('/cateList')
 
+//严选推荐
+export const reqBanner = () => ajax('/banner')
+

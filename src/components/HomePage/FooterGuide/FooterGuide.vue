@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  @import "../../common/stylus/mixins.styl";
+  @import "../../../common/stylus/mixins.styl";
 
   .footer
     border-top 1px solid #e4e4e4

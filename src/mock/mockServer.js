@@ -4,6 +4,7 @@
 
 import Mock from 'mockjs'
 import home from './datahome'
+import topic from './datatopic'
 
 //暴露数据
 
@@ -19,6 +20,8 @@ Mock.mock('/popularItemList', {code: 0, data: home.popularItemList})
 Mock.mock('/topicList', {code: 0, data: home.topicList})
 //好物
 Mock.mock('/cateList', {code: 0, data: home.cateList})
+//严选推荐
+Mock.mock('/banner', {code: 0, data: topic.banner})
 
 
 

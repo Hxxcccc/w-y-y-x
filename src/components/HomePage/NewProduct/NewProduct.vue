@@ -57,7 +57,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  @import '../../common/stylus/mixins.styl'
+  @import '../../../common/stylus/mixins.styl'
   .xinpin
     width 100%
     height 120px

@@ -7,7 +7,8 @@ import {
   RECEIVE_NEWITEMNEWUSERLIST,
   RECEIVE_POPULARITEMLIST,
   RECEIVE_TOPICLIST,
-  RECEIVE_CATELIST
+  RECEIVE_CATELIST,
+  RECEIVE_BANNER
 } from './mutatios-types'
 
 import {
@@ -16,7 +17,8 @@ import {
   reqNewItemNewUserList,
   reqPopularItemList,
   reqTopicList,
-  reqCateList
+  reqCateList,
+  reqBanner
 } from '../api'
 
 export default {
@@ -71,6 +73,15 @@ export default {
     if(result.code === 0) {
       const cateList = result.data
       commit(RECEIVE_CATELIST, {cateList})
+    }
+  },
+
+  //严选推荐
+  async getBanner ({commit}){
+    const result = await reqBanner()
+    if(result.code === 0) {
+      const banner = result.data
+      commit(RECEIVE_BANNER, {banner})
     }
   },
 }

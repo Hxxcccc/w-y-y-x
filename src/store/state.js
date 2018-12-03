@@ -9,4 +9,5 @@ export default {
   popularItemList: [],    //人气推荐
   topicList: [],      //专题精选
   cateList: [],      //好物
+  banner: []        //严选推荐
 }

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import 'lib-flexible/flexible.js'
 import app from './app'
 import router from './router'
-import HeaderGuide from './components/HeaderGuide/HeaderGuide'
+import HeaderGuide from './components/HomePage/HeaderGuide/HeaderGuide'
 import './mock/mockServer'
 /* eslint-disable no-new */
 import store from './store'

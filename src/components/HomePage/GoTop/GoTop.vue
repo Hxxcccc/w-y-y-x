@@ -49,7 +49,7 @@
   .goTop
     width 50px
     height 50px
-    background-image url("../../../static/images/gotop.png")
+    background-image url("../../../../static/images/gotop.png")
     background-repeat no-repeat
     background-size: 50px;
     position fixed

@@ -8,7 +8,8 @@ import {
   RECEIVE_NEWITEMNEWUSERLIST,
   RECEIVE_POPULARITEMLIST,
   RECEIVE_TOPICLIST,
-  RECEIVE_CATELIST
+  RECEIVE_CATELIST,
+  RECEIVE_BANNER
 } from './mutatios-types'
 
 export default {
@@ -34,6 +35,10 @@ export default {
 
   [RECEIVE_CATELIST] (state, {cateList}) {
     state.cateList = cateList
+  },
+
+  [RECEIVE_BANNER] (state, {banner}) {
+    state.banner = banner
   },
 }
 

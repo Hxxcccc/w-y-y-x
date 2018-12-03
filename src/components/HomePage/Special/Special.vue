@@ -5,12 +5,12 @@
       <div class="ping">
         <span class="yan">严 选 限 时 购</span>
         <span class="examine">下一场 22:00 开始</span>
-        <div class="lobster"><img src="../../../static/images/33148f20c32525c6dcb9f33577957e77.png" alt="" style="width: 150px"></div>
+        <div class="lobster"><img src="../../../../static/images/33148f20c32525c6dcb9f33577957e77.png" alt="" style="width: 150px"></div>
       </div>
     </div>
     <div class="division"></div>
     <div class="weal">
-      <img src="../../../static/images/move.a3ea2d1.jpg" alt="" style="height: 150px">
+      <img src="../../../../static/images/move.a3ea2d1.jpg" alt="" style="height: 150px">
     </div>
     <div class="division"></div>
     <div class="special">
@@ -65,7 +65,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  @import '../../common/stylus/mixins.styl'
+  @import '../../../common/stylus/mixins.styl'
 
   .division
     width 100%
