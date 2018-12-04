@@ -10,7 +10,7 @@
 
 ## 专题精选下item (topicList)
 
-## 好物 
+## 好物
 
 > (cateList[x].itemList)
 
@@ -29,7 +29,7 @@
 
 ## banner (banner)
 
-## banner下 tab column
+## banner下tab column
 
 ## 为你推荐 (recommendOne)
 

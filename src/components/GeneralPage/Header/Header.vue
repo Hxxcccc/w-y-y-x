@@ -1,7 +1,7 @@
 <template>
   <div class="header">
   <div class="home">
-    <i class="iconfont icon-shouye1" style="font-size: 20px;"></i>
+    <i class="iconfont icon-shouye1" style="font-size: 20px;" @click="$router.push('/msite')"></i>
   </div>
   <div class="find" style="margin-left: 100px">
     <span style="font-size: 20px; font-weight: bold; color: #b4282d">发现</span>
@@ -23,6 +23,10 @@
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import '../../../common/stylus/mixins.styl'
   .header
+    position fixed
+    top 0
+    left 0
+    z-index 100
     border-bottom 1px solid #e4e4e4
     width 100%
     height 45px

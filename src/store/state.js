@@ -9,5 +9,11 @@ export default {
   popularItemList: [],    //人气推荐
   topicList: [],      //专题精选
   cateList: [],      //好物
-  banner: []        //严选推荐
+  banner: [],        //严选推荐
+  column: [],        //banner下tab column
+  recommend: [],      //为你推荐 (recommendOne)
+  tenfifteen: [],     //十点一刻
+  zhen: {},           //臻品
+  yxLook: {},         //look
+  yxWeek: [],         //更多精彩
 }

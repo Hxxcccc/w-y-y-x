@@ -9,7 +9,13 @@ import {
   RECEIVE_POPULARITEMLIST,
   RECEIVE_TOPICLIST,
   RECEIVE_CATELIST,
-  RECEIVE_BANNER
+  RECEIVE_BANNER,
+  RECEIVE_COLUMN,
+  RECEIVE_RECOMMEND,
+  RECEIVE_TENFIFTEEN,
+  RECEIVE_ZHEN,
+  RECEIVE_YXLOOK,
+  RECEIVE_YXWEEK
 } from './mutatios-types'
 
 export default {
@@ -39,6 +45,30 @@ export default {
 
   [RECEIVE_BANNER] (state, {banner}) {
     state.banner = banner
+  },
+
+  [RECEIVE_COLUMN] (state, {column}) {
+    state.column = column
+  },
+
+  [RECEIVE_RECOMMEND] (state, {recommend}) {
+    state.recommend = recommend
+  },
+
+  [RECEIVE_TENFIFTEEN] (state, {tenfifteen}) {
+    state.tenfifteen = tenfifteen
+  },
+
+  [RECEIVE_ZHEN] (state, {zhen}) {
+    state.zhen = zhen
+  },
+
+  [RECEIVE_YXLOOK] (state, {yxLook}) {
+    state.yxLook = yxLook
+  },
+
+  [RECEIVE_YXWEEK] (state, {yxWeek}) {
+    state.yxWeek = yxWeek
   },
 }
 

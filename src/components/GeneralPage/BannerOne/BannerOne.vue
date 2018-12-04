@@ -43,7 +43,7 @@
           new Swiper('#swiper5', {
             slidesPerView: 1.2,
             spaceBetween: 20,
-            loop:true
+            loop: true
           })
         })
       }
@@ -55,7 +55,7 @@
   @import '../../../common/stylus/mixins.styl'
 
   #swiper5
-    margin-top 10px
+    margin-top 56px
     .slid
       position relative
       left 25px

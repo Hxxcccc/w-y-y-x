@@ -8,7 +8,13 @@ import {
   RECEIVE_POPULARITEMLIST,
   RECEIVE_TOPICLIST,
   RECEIVE_CATELIST,
-  RECEIVE_BANNER
+  RECEIVE_BANNER,
+  RECEIVE_COLUMN,
+  RECEIVE_RECOMMEND,
+  RECEIVE_TENFIFTEEN,
+  RECEIVE_ZHEN,
+  RECEIVE_YXLOOK,
+  RECEIVE_YXWEEK
 } from './mutatios-types'
 
 import {
@@ -18,7 +24,13 @@ import {
   reqPopularItemList,
   reqTopicList,
   reqCateList,
-  reqBanner
+  reqBanner,
+  reqColumn,
+  reqRecommend,
+  reqTenfifteen,
+  reqZhen,
+  reqYxLook,
+  reqYxWeek
 } from '../api'
 
 export default {
@@ -82,6 +94,60 @@ export default {
     if(result.code === 0) {
       const banner = result.data
       commit(RECEIVE_BANNER, {banner})
+    }
+  },
+
+  //banner下的column
+  async getColumn ({commit}){
+    const result = await reqColumn()
+    if(result.code === 0) {
+      const column = result.data
+      commit(RECEIVE_COLUMN, {column})
+    }
+  },
+
+  //为你推荐 (recommendOne)
+  async getRecommend ({commit}){
+    const result = await reqRecommend()
+    if(result.code === 0) {
+      const recommend = result.data
+      commit(RECEIVE_RECOMMEND, {recommend})
+    }
+  },
+
+  //十点一刻
+  async getTenfifteen ({commit}){
+    const result = await reqTenfifteen()
+    if(result.code === 0) {
+      const tenfifteen = result.data
+      commit(RECEIVE_TENFIFTEEN, {tenfifteen})
+    }
+  },
+
+  //臻品
+  async getZhen ({commit}){
+    const result = await reqZhen()
+    if(result.code === 0) {
+      const zhen = result.data
+      commit(RECEIVE_ZHEN, {zhen})
+    }
+  },
+
+  //look
+  async getYxLook ({commit}){
+    const result = await reqYxLook()
+    if(result.code === 0) {
+      const yxLook = result.data
+      commit(RECEIVE_YXLOOK, {yxLook})
+    }
+  },
+
+  //更多精彩
+  async getYxWeek ({commit}){
+    const result = await reqYxWeek()
+    if(result.code === 0) {
+      const yxWeek = result.data
+      commit(RECEIVE_YXWEEK, {yxWeek})
     }
   },
 }
